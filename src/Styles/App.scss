@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@import "colors";
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+  background-color: $backgroundColor;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.loadingIcon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
