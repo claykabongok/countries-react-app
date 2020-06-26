@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
-import NavBar from "./Navigation/NavBarSecondary";
+import NavBar from "./Navigation/NavBar";
 import "../Styles/pagenotfound.scss";
 
 export default function PageNotFound() {

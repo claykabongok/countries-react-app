@@ -20,8 +20,10 @@ export default function Homepage() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-          callingcode
-            <Nav.Link href="/callingcode">Country code</Nav.Link>
+          <Nav.Link href="/seachcountryname">Country Name</Nav.Link>
+          <Nav.Link href="/seachcapital">Capital</Nav.Link>
+            <Nav.Link href="/callingcode">Calling Code</Nav.Link>
+          
             <NavDropdown title="Region" id="collasible-nav-dropdown">
             <NavDropdown.Item href={`/region/${regions.Africa}`}>Africa</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -36,13 +38,7 @@ export default function Homepage() {
               <NavDropdown.Item href={`/region/${regions.Oceania}`}>Oceania</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-          </Nav>
+        
         </Navbar.Collapse>
       </Navbar>
     </>

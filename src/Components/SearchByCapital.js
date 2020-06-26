@@ -1,24 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Card, Badge, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
-import "../Styles/CallingCode.scss";
-export default function CallingCode() {
+import "../Styles/SearchByName.scss";
+export default function SearchByCapital() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [searchresult, setsearchresult] = useState([]);
 
-  function SearchCode(e) {
+  function SearchByCapital(e) {
     e.preventDefault();
 
-    if (query >= 1) {
+    if (query != null) {
       setLoading(true);
       setError(false);
-      const api = `https://restcountries.eu/rest/v2/callingcode/${query}`;
+      const api = `https://restcountries.eu/rest/v2/capital/${query}`;
 
       axios({
         method: "GET",
@@ -51,7 +53,7 @@ export default function CallingCode() {
 
       <Container className="calling-code-container">
         <div class="container-fluid calling-code-card">
-          <h2>Search by calling code {query}</h2>
+          <h2>Search by capital city {query}</h2>
 
           <div className="row calling-search-from-container">
             <div>
@@ -61,17 +63,17 @@ export default function CallingCode() {
 
               {error && (
                 <div class="alert alert-danger">
-                  <strong>{query}</strong> is not a valid calling code. Please
-                  provide a valid try again.
+                  <strong>Not found!</strong> Please provide a valid calling
+                  code and try again.
                 </div>
               )}
             </div>
             <div className="col-lg-12  ">
-              <form onSubmit={SearchCode}>
+              <form onSubmit={SearchByCapital}>
                 <input
                   className="form-control form-control-lg"
-                  type="number"
-                  placeholder="Type any calling code example 1"
+                  type="text"
+                  placeholder="Search for any capital"
                   autoFocus
                   name="query"
                   value={query}

@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Country from "./Country";
 import axios from "axios";
-import NavBar from "./Navigation/NavBarSecondary";
+import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
 
 export default function Regions(props) {
@@ -13,8 +13,6 @@ export default function Regions(props) {
   const [error, setError] = useState(false);
   const [countries, setCountries] = useState([]);
   const regionName = props.match.params.name;
-  
-
 
   useEffect(() => {
     setLoading(true);
@@ -34,20 +32,20 @@ export default function Regions(props) {
       .catch((e) => {
         setError(true);
       });
-  }, []);
+  }, [regionName]);
   return (
     <>
       <NavBar />
-      <div>{loading && <img src={loadingIcon} alt="loading" className="loadingIcon" />}</div>
-      <Container>
-        <div class="container-products">
-          <div class="container-products-content">
-            <div class="row ">
-              {countries.map((data) => (
-                <Country data={data} key={data.numericCode} />
-              ))}
-            </div>
-          </div>
+      <div>
+        {loading && (
+          <img src={loadingIcon} alt="loading" className="loadingIcon" />
+        )}
+      </div>
+      <Container className="contries">
+        <div class="row ">
+          {countries.map((data) => (
+            <Country data={data} key={data.numericCode} />
+          ))}
         </div>
         <div class="row cards ">{/* <Homepage/> */}</div>
       </Container>

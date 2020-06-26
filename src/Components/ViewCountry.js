@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Country from "./Country";
 import axios from "axios";
-import NavBar from "./Navigation/NavBarSecondary";
+import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
 
 import {

@@ -5,7 +5,7 @@ import "../Styles/country.scss";
 
 export default function Country({ data }) {
   return (
-    <div className="col-lg-3 col-md-4 col-crountry-container">
+    <div className="col-lg-3 col-md-4  col-crountry-container">
       <div className="card-country">
         <img class="card-img-top" src={data.flag} alt="flag" />
         <div class="card-body">
@@ -19,7 +19,7 @@ export default function Country({ data }) {
               basedOn="letters"
             />
           </h4>
-          <p class="card-text c">{data.capital}</p>
+          <p class="card-text ">{data.capital}</p>
         </div>
         <div className="card-country-info">
           <a
