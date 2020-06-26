@@ -6,6 +6,8 @@ import Regions from "./Components/Regions";
 import PageNotFound from "./Components/PageNotFound";
 import ViewCountry from "./Components/ViewCountry";
 import "./Styles/App.scss";
+import CallingCode from "./Components/CallingCode";
+
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
 
         <Route exact path="/" component={Homepage} />
         <Route  path="/region/:name" component={Regions} />
-        <Route path="/viewcountry/:country" component={ViewCountry}/>
+        <Route exact path="/callingcode" component={CallingCode}/>
+        <Route path="/viewcountry/:country/:latlng" component={ViewCountry}/>
         <Route  component={PageNotFound} />
      
     

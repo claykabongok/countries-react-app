@@ -21,7 +21,7 @@ export default function Homepage() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
           
-            <Nav.Link href="#pricing">Country code</Nav.Link>
+            <Nav.Link href="/callingcode">Country code</Nav.Link>
             <NavDropdown title="Region" id="collasible-nav-dropdown">
             <NavDropdown.Item href={`/region/${regions.Africa}`}>Africa</NavDropdown.Item>
               <NavDropdown.Divider />

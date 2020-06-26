@@ -5,7 +5,7 @@ import "../Styles/country.scss";
 
 export default function Country({ data }) {
   return (
-    <div className="col-lg-3 col-crountry-container">
+    <div className="col-lg-3 col-md-4 col-crountry-container">
       <div className="card-country">
         <img class="card-img-top" src={data.flag} alt="flag" />
         <div class="card-body">
@@ -23,7 +23,7 @@ export default function Country({ data }) {
         </div>
         <div className="card-country-info">
           <a
-            href={`/viewcountry/${data.alpha3Code}`}
+            href={`/viewcountry/${data.alpha3Code}/${data.latlng}`}
             className="stretched-link"
           ></a>
         </div>

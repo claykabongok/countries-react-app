@@ -1,0 +1,41 @@
+@import "colors";
+.contry {
+  padding: 40px 5px;
+}
+
+.view-country-flag {
+  img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+}
+
+.country-info-card {
+  background-color: $colorwhite;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 6px;
+
+  color: $secondThemeColorText;
+}
+
+.header-country-name {
+  margin-bottom: 10px;
+  color: $secondThemeColorText;
+  h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+}
+
+.country-basic-info-text {
+  margin-top: 20px;
+  span {
+    font-weight: lighter;
+  }
+}
