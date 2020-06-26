@@ -47,7 +47,6 @@ export default function Regions(props) {
             <Country data={data} key={data.numericCode} />
           ))}
         </div>
-        <div class="row cards ">{/* <Homepage/> */}</div>
       </Container>
     </>
   );

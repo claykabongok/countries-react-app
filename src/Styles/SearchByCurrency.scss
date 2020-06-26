@@ -28,3 +28,10 @@
     margin-bottom: 20px;
   }
 }
+.search-button {
+  background-color: $secondThemeColorText;
+  color: $colorwhite;
+  &:hover {
+    color: $colorwhite;
+  }
+}

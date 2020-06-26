@@ -8,6 +8,8 @@ import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
 import "../Styles/SearchByCurrency.scss";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SearchByCurrency() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,7 +55,7 @@ export default function SearchByCurrency() {
 
       <Container className="calling-code-container">
         <div class="container-fluid calling-code-card">
-          <h2>Search by currency  {query}</h2>
+          <h2>Search by currency {query}</h2>
 
           <div className="row calling-search-from-container">
             <div>
@@ -70,15 +72,25 @@ export default function SearchByCurrency() {
             </div>
             <div className="col-lg-12  ">
               <form onSubmit={SearchByName}>
-                <input
-                  className="form-control form-control-lg"
-                  type="text"
-                  placeholder="Search by currency [ex: USD for United States dollar]"
-                  autoFocus
-                  name="query"
-                  value={query}
-                  onChange={handleSearchInput}
-                />
+                <div class="input-group">
+                  <input
+                    className="form-control form-control-lg shadow-none"
+                    type="text"
+                    placeholder="Search by currency [ex: USD for United States dollar]"
+                    autoFocus
+                    name="query"
+                    value={query}
+                    onChange={handleSearchInput}
+                  />
+                  <div class="input-group-append">
+                    <button
+                      className="btn search-button shadow-none"
+                      type="submit"
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>

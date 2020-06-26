@@ -5,6 +5,8 @@ import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Styles/CallingCode.scss";
 export default function CallingCode() {
   const [query, setQuery] = useState("");
@@ -68,15 +70,25 @@ export default function CallingCode() {
             </div>
             <div className="col-lg-12  ">
               <form onSubmit={SearchCode}>
-                <input
-                  className="form-control form-control-lg"
-                  type="number"
-                  placeholder="Type any calling code example 1"
-                  autoFocus
-                  name="query"
-                  value={query}
-                  onChange={handleSearchInput}
-                />
+                <div class="input-group">
+                  <input
+                    className="form-control form-control-lg shadow-none"
+                    type="number"
+                    placeholder="Type any calling code example 1"
+                    autoFocus
+                    name="query"
+                    value={query}
+                    onChange={handleSearchInput}
+                  />
+                  <div class="input-group-append">
+                    <button
+                      className="btn search-button shadow-none"
+                      type="submit"
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
