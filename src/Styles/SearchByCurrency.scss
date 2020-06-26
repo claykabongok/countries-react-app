@@ -1,0 +1,30 @@
+@import "colors";
+
+.calling-code-container {
+  padding: 40px 5px;
+}
+.calling-search-from-container {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.row-search-results {
+  margin: 30px 10px;
+}
+.calling-code-card {
+  background-color: $colorwhite;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 6px;
+
+  color: $secondThemeColorText;
+
+  h2 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 20px;
+  }
+}

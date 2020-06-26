@@ -14,6 +14,7 @@ import "./Styles/App.scss";
 import CallingCode from "./Components/CallingCode";
 import SearchCountryName from "./Components/SearchByName";
 import SearchCapital from "./Components/SearchByCapital";
+import SearchCurrency from "./Components/SearchByCurrency";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route exact path="/callingcode" component={CallingCode} />
         <Route exact path="/seachcountryname" component={SearchCountryName} />
         <Route exact path="/seachcapital" component={SearchCapital} />
+        <Route exact path="/seachcurrency" component={SearchCurrency} />
+       
 
         <Route path="/viewcountry/:country/:latlng" component={ViewCountry} />
         <Route component={PageNotFound} />
