@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/claykabongok/countries-react-app/static/css/main.8ce141a4.chunk.css",
+    "main.js": "/claykabongok/countries-react-app/static/js/main.5e6f4521.chunk.js",
+    "main.js.map": "/claykabongok/countries-react-app/static/js/main.5e6f4521.chunk.js.map",
+    "runtime-main.js": "/claykabongok/countries-react-app/static/js/runtime-main.2130924e.js",
+    "runtime-main.js.map": "/claykabongok/countries-react-app/static/js/runtime-main.2130924e.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/claykabongok/countries-react-app/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.98d283c1.chunk.js": "/claykabongok/countries-react-app/static/js/2.98d283c1.chunk.js",
+    "static/js/2.98d283c1.chunk.js.map": "/claykabongok/countries-react-app/static/js/2.98d283c1.chunk.js.map",
+    "index.html": "/claykabongok/countries-react-app/index.html",
+    "precache-manifest.94f803850ec22d02c39e3399c4a313f9.js": "/claykabongok/countries-react-app/precache-manifest.94f803850ec22d02c39e3399c4a313f9.js",
+    "service-worker.js": "/claykabongok/countries-react-app/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/claykabongok/countries-react-app/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.8ce141a4.chunk.css.map": "/claykabongok/countries-react-app/static/css/main.8ce141a4.chunk.css.map",
+    "static/js/2.98d283c1.chunk.js.LICENSE.txt": "/claykabongok/countries-react-app/static/js/2.98d283c1.chunk.js.LICENSE.txt",
+    "static/media/error-1349562_1280.png": "/claykabongok/countries-react-app/static/media/error-1349562_1280.edab0e16.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2130924e.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.98d283c1.chunk.js",
+    "static/css/main.8ce141a4.chunk.css",
+    "static/js/main.5e6f4521.chunk.js"
+  ]
+}
