@@ -38,7 +38,7 @@ export default function Homepage() {
     <>
       <NavBar />
       <div>{loading && <img src={loadingIcon} alt="loading" className="loadingIcon" />}</div>
-      <Container className="contries">
+      <div className="container-contries">
     
             <div class="row ">
               {countries.map((data) => (
@@ -47,7 +47,7 @@ export default function Homepage() {
             </div>
       
    
-      </Container>
+      </div>
     </>
   );
 }

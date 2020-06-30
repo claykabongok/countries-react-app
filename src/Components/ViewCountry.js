@@ -8,6 +8,7 @@ import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
 
+
 import {
   withGoogleMap,
   withScriptjs,
@@ -186,9 +187,9 @@ export default function ViewCountry(props) {
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Code</th>
-                    <th>Symbol</th>
-                    <th>Name</th>
+                    <th className="table-header-view-country">Code</th>
+                    <th className="table-header-view-country">Symbol</th>
+                    <th className="table-header-view-country">Name</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -240,9 +241,9 @@ export default function ViewCountry(props) {
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Native Name</th>
+                    <th className="table-header-view-country">Code</th>
+                    <th className="table-header-view-country">Name</th>
+                    <th className="table-header-view-country">Native Name</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -272,8 +273,8 @@ export default function ViewCountry(props) {
                 <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th>Acronym</th>
-                      <th>Name</th>
+                      <th className="table-header-view-country">Acronym</th>
+                      <th className="table-header-view-country">Name</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -299,7 +300,7 @@ export default function ViewCountry(props) {
             </div>
             <div class="col-sm-12 " style={{ width: "100vw", height: "80vh" }}>
               <WrappedMap
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAP_API_KEY}`}
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=yourkey`}
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `100%` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

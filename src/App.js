@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter as Router, 
   Route,
-  Redirect,
+  
   Switch,
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,17 +18,17 @@ import SearchCurrency from "./Components/SearchByCurrency";
 
 function App() {
   return (
-    <Router>
+    <Router  >
       <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/region/:name" component={Regions} />
-        <Route exact path="/callingcode" component={CallingCode} />
-        <Route exact path="/seachcountryname" component={SearchCountryName} />
-        <Route exact path="/seachcapital" component={SearchCapital} />
-        <Route exact path="/seachcurrency" component={SearchCurrency} />
+        <Route  exact path="/" component={Homepage} />
+        <Route  exact path="/region/:name" component={Regions} />
+        <Route  exact path="/callingcode" component={CallingCode} />
+        <Route  exact path="/seachcountryname" component={SearchCountryName} />
+        <Route  exact path="/seachcapital" component={SearchCapital} />
+        <Route  exact path="/seachcurrency" component={SearchCurrency} />
        
 
-        <Route path="/viewcountry/:country/:latlng" component={ViewCountry} />
+        <Route exact path="/viewcountry/:country/:latlng" component={ViewCountry} />
         <Route component={PageNotFound} />
       </Switch>
     </Router>
