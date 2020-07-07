@@ -1,6 +1,8 @@
 # `Countries App React`
 
-## Demo:
+## Live demo [Click here](https://claykab.netlify.app/region/oceania)
+
+## Demo Screens:
 
 <img src="https://github.com/claykabongok/countries-react-app/blob/master/demo/countries.jpg?raw=true" alt="Demo screen">
 
