@@ -1,6 +1,6 @@
 # `Countries App React`
 
-## Live demo [Click here](https://claykab.netlify.app/region/oceania)
+## [Live demo](https://claykab.netlify.app)
 
 ## Demo Screens:
 
