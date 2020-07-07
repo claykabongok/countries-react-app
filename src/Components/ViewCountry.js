@@ -84,7 +84,7 @@ export default function ViewCountry(props) {
         <div class="container-fluid country-info-card">
           <div className="row">
             <div class="col-lg-12 header-country-name">
-              <h2>{countryData.name}</h2>
+              <h1>{countryData.name}</h1>
             </div>
           </div>
           <div class="row">
