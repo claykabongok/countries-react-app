@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Card, Badge, Button } from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-import Country from "./Country";
+
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
-
 
 import {
   withGoogleMap,
   withScriptjs,
   GoogleMap,
   Marker,
-  InfoWindow,
+ 
 } from "react-google-maps";
 
 import "../Styles/viewcountry.scss";
@@ -83,7 +80,7 @@ export default function ViewCountry(props) {
           <img src={loadingIcon} alt="loading" className="loadingIcon" />
         )}
       </div>
-      <Container className="contry">
+      <div className="container-contries">
         <div class="container-fluid country-info-card">
           <div className="row">
             <div class="col-lg-12 header-country-name">
@@ -175,13 +172,7 @@ export default function ViewCountry(props) {
         <div class="container-fluid country-info-card">
           <div className="row">
             <div class="col-sm-12">
-              <h4>
-              {currencies.length <= 1
-                    ? "Currency"
-                    : "Currencies"}
-                </h4>{" "}
-
-
+              <h4>{currencies.length <= 1 ? "Currency" : "Currencies"}</h4>{" "}
             </div>
             <div class="col-sm-12 ">
               <table class="table table-hover">
@@ -308,7 +299,7 @@ export default function ViewCountry(props) {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

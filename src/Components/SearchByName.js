@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Card, Badge, Button } from "react-bootstrap";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
 import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
@@ -53,7 +50,7 @@ export default function SearchByName() {
     <div>
       <NavBar />
 
-      <Container className="calling-code-container">
+      <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search country name {query}</h2>
 
@@ -102,7 +99,7 @@ export default function SearchByName() {
               : ""}
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

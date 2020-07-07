@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
 import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
@@ -51,7 +50,7 @@ export default function CallingCode() {
     <div>
       <NavBar />
 
-      <Container className="calling-code-container">
+      <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search by calling code {query}</h2>
 
@@ -100,7 +99,7 @@ export default function CallingCode() {
               : ""}
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, Badge, Button } from "react-bootstrap";
 import LinesEllipsis from "react-lines-ellipsis";
 import "../Styles/country.scss";
 
@@ -25,7 +24,7 @@ export default function Country({ data }) {
           <a
             href={`/viewcountry/${data.alpha3Code}/${data.latlng}`}
             className="stretched-link"
-          ></a>
+          > </a>
         </div>
       </div>
     </div>
