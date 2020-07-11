@@ -43,3 +43,12 @@
 .table-header-view-country {
   color: $secondThemeColorText;
 }
+
+$a-tag-country-name: "a, a:active, a:hover,a:visited,a:link";
+
+.country-border-name {
+  #{$a-tag-country-name} {
+    text-decoration: none;
+    color: #212529;
+  }
+}
