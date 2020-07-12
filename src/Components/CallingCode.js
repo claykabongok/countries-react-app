@@ -7,6 +7,9 @@ import loadingIcon from "../assets/images/loadingIcon.gif";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Styles/CallingCode.scss";
+import SearchResultNumber from "./SearchResultNumber";
+import Footer from "./Navigation/Footer";
+
 export default function CallingCode() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,6 +56,7 @@ export default function CallingCode() {
       <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search by calling code {query}</h2>
+          <SearchResultNumber countries={searchresult} />
 
           <div className="row calling-search-from-container">
             <div>
@@ -100,6 +104,7 @@ export default function CallingCode() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

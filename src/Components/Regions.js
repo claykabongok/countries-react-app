@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-//import { BrowserRouter as Router, Route } from "react-router-dom";
-//import { Card, Badge, Button } from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-//import { Container, Row, Col } from "react-bootstrap";
+
 import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
+import NumberOfCountriesPergion from "./NumberOfCountriesPerRegion";
+import Footer from "./Navigation/Footer";
 
 export default function Regions(props) {
   const [loading, setLoading] = useState(true);
@@ -30,8 +31,7 @@ export default function Regions(props) {
         setLoading(false);
       })
       .catch((e) => {
-       // setError(true);
-       
+        // setError(true);
       });
   }, [regionName]);
   return (
@@ -43,12 +43,15 @@ export default function Regions(props) {
         )}
       </div>
       <div className="container-contries">
+        <NumberOfCountriesPergion countries={countries} />
         <div class="row ">
           {countries.map((data) => (
             <Country data={data} key={data.numericCode} />
           ))}
         </div>
       </div>
+
+      {countries.length > 0 ? <Footer /> : ""}
     </>
   );
 }

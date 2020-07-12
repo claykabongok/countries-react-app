@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Country from "./Country";
 import axios from "axios";
@@ -7,6 +7,8 @@ import loadingIcon from "../assets/images/loadingIcon.gif";
 import "../Styles/SearchByName.scss";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SearchResultNumber from "./SearchResultNumber";
+import Footer from "./Navigation/Footer";
 export default function SearchByCapital() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,7 +55,7 @@ export default function SearchByCapital() {
       <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search by capital city {query}</h2>
-
+          <SearchResultNumber countries={searchresult} />
           <div className="row calling-search-from-container">
             <div>
               {loading && (
@@ -100,6 +102,7 @@ export default function SearchByCapital() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

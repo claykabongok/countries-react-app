@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
+import Footer from "./Navigation/Footer";
 
 import {
   withGoogleMap,
@@ -306,7 +307,8 @@ export default function ViewCountry(props) {
                     <h4>
                       {regionalBlocks.length <= 1
                         ? "Regional Bloc"
-                        : "Regional Blocs"}
+                        : "Regional Blocs"
+                        }
                     </h4>
                   </div>
                   <div class="col-sm-12 ">
@@ -335,34 +337,7 @@ export default function ViewCountry(props) {
           </div>
         </div>
 
-        {/* <div class="container-fluid country-info-card">
-          <div className="row">
-            <div class="col-sm-12 ">
-              <h4>{languages.length <= 1 ? "Languague" : "Languagues"}</h4>
-            </div>
-            <div class="col-sm-12 ">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th className="table-header-view-country">Code</th>
-                    <th className="table-header-view-country">Name</th>
-                    <th className="table-header-view-country">Native Name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {languages.map((language) => (
-                    <tr>
-                      <td> {language.iso639_2}</td>
-                      <td> {language.name}</td>
-                      <td>{language.nativeName}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div> */}
-
+        
         <div class="container-fluid country-info-card">
           <div className="row">
             <div class="col-sm-12 ">
@@ -379,6 +354,7 @@ export default function ViewCountry(props) {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

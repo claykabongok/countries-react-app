@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Country from "./Country";
 import axios from "axios";
@@ -7,6 +7,8 @@ import loadingIcon from "../assets/images/loadingIcon.gif";
 import "../Styles/SearchByCurrency.scss";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SearchResultNumber from "./SearchResultNumber";
+import Footer from "./Navigation/Footer";
 export default function SearchByCurrency() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,6 +55,7 @@ export default function SearchByCurrency() {
       <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search by currency {query}</h2>
+          <SearchResultNumber countries={searchresult} />
 
           <div className="row calling-search-from-container">
             <div>
@@ -100,6 +103,7 @@ export default function SearchByCurrency() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

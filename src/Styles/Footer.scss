@@ -1,0 +1,15 @@
+@import "colors";
+
+.page-footer {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  background-color: $backgroundColorNavBar;
+}
+.page-footer hr {
+  width: 100%;
+  margin: 0 auto;
+  border-width: 3px;
+  border-color: #e6e6e6;
+}

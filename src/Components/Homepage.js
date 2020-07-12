@@ -4,7 +4,8 @@ import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
 import loadingIcon from "../assets/images/loadingIcon.gif";
-
+import NumberOfCountriesPergion from "./NumberOfCountriesPerRegion";
+import Footer from "./Navigation/Footer";
 
 export default function Homepage() {
   const [loading, setLoading] = useState(true);
@@ -34,17 +35,20 @@ export default function Homepage() {
   return (
     <>
       <NavBar />
-      <div>{loading && <img src={loadingIcon} alt="loading" className="loadingIcon" />}</div>
-      <div className="container-contries">
-    
-            <div class="row ">
-              {countries.map((data) => (
-                <Country data={data} key={data.numericCode} />
-              ))}
-            </div>
-      
-   
+      <div>
+        {loading && (
+          <img src={loadingIcon} alt="loading" className="loadingIcon" />
+        )}
       </div>
+      <div className="container-contries">
+        <NumberOfCountriesPergion countries={countries} />
+        <div class="row ">
+          {countries.map((data) => (
+            <Country data={data} key={data.numericCode} />
+          ))}
+        </div>
+      </div>
+      {countries.length > 0 ? <Footer /> : ""}
     </>
   );
 }

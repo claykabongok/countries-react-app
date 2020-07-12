@@ -7,6 +7,9 @@ import loadingIcon from "../assets/images/loadingIcon.gif";
 import "../Styles/SearchByName.scss";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SearchResultNumber from "./SearchResultNumber";
+import Footer from './Navigation/Footer';
+
 export default function SearchByName() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,7 +56,7 @@ export default function SearchByName() {
       <div className="container-contries">
         <div class="container-fluid calling-code-card">
           <h2>Search country name {query}</h2>
-
+          <SearchResultNumber countries={searchresult} />
           <div className="row calling-search-from-container">
             <div>
               {loading && (
@@ -100,6 +103,8 @@ export default function SearchByName() {
           </div>
         </div>
       </div>
+      <Footer/>
+    
     </div>
   );
 }
