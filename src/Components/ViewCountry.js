@@ -28,8 +28,12 @@ export default function ViewCountry(props) {
   const country = props.match.params.country;
 
   const strlatlng = props.match.params.latlng;
-  const latlng = strlatlng.split(",");
-
+  
+   let latlng="";
+   if(strlatlng){
+    latlng=strlatlng.split(",");
+   }
+ 
   function mapgoogle() {
     return (
       <GoogleMap

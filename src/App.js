@@ -29,6 +29,8 @@ function App() {
        
 
         <Route exact path="/viewcountry/:country/:latlng" component={ViewCountry} />
+        
+        <Route exact path="/viewcountry/:country" component={ViewCountry} />
         <Route component={PageNotFound} />
       </Switch>
     </Router>
