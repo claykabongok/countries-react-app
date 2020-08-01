@@ -4,7 +4,8 @@ import "../Styles/country.scss";
 
 export default function Country({ data }) {
   return (
-    <div className="col-lg-3 col-md-4  col-crountry-container">
+    
+    <div className="col-lg-3 col-md-4  col-sm-6 col-crountry-container">
       <div className="card-country">
         <img class="card-img-top" src={data.flag} alt="flag" />
         <div class="card-body">
