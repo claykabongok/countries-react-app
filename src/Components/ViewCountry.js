@@ -148,7 +148,7 @@ export default function ViewCountry(props) {
                       <h4>Alternative Spellings ({altSpelling.length}):</h4>{" "}
                     </div>
                     <div class="col-sm-12 ">
-                      <table class="table table-hover">
+                      <table class="table table-hover table-borderless">
                         <tbody>
                           {altSpelling.map((name) => (
                             <tr>
@@ -172,7 +172,7 @@ export default function ViewCountry(props) {
                       <h4>Borders ({borders.length}):</h4>{" "}
                     </div>
                     <div class="col-sm-12 ">
-                      <table class="table table-hover">
+                      <table class="table table-hover table-borderless">
                         <thead>
                           <tr>
                             <th className="table-header-view-country">Name</th>
@@ -217,7 +217,7 @@ export default function ViewCountry(props) {
                     </h4>
                   </div>
                   <div class="col-sm-12 ">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-borderless">
                       <thead>
                         <tr>
                           <th className="table-header-view-country">Code</th>
@@ -248,7 +248,7 @@ export default function ViewCountry(props) {
                     <h4>{timezones.length <= 1 ? "Timezone" : "Timezones"}</h4>
                   </div>
                   <div class="col-sm-12 ">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-borderless">
                       <tbody>
                         {timezones.map((timezone) => (
                           <tr>
@@ -272,7 +272,7 @@ export default function ViewCountry(props) {
                   <h4>{currencies.length <= 1 ? "Currency" : "Currencies"}</h4>{" "}
                 </div>
                 <div class="col-sm-12 ">
-                  <table class="table table-hover">
+                  <table class="table table-hover table-borderless">
                     <thead>
                       <tr>
                         <th className="table-header-view-country">Code</th>
@@ -316,7 +316,7 @@ export default function ViewCountry(props) {
                     </h4>
                   </div>
                   <div class="col-sm-12 ">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-borderless">
                       <thead>
                         <tr>
                           <th className="table-header-view-country">Acronym</th>
