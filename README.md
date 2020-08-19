@@ -1,5 +1,11 @@
 # `Countries App React`
 
+A reactjs app about world countries with the following features search and view countries by:
+
+- region
+- capital
+- and calling code.
+
 ## [Live demo](https://claykab.netlify.app)
 
 ## Usage
