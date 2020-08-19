@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Country from "./Country";
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
-import loadingIcon from "../assets/images/loadingIcon.gif";
+import loadingIcon from "../assets/images/loader_theme_color_large.gif";
 import "../Styles/SearchByName.scss";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

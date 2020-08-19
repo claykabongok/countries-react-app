@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import axios from "axios";
 import NavBar from "./Navigation/NavBar";
-import loadingIcon from "../assets/images/loadingIcon.gif";
+import loadingIcon from "../assets/images/loader_theme_color_large.gif";
 import Footer from "./Navigation/Footer";
 
 import {
@@ -28,12 +28,12 @@ export default function ViewCountry(props) {
   const country = props.match.params.country;
 
   const strlatlng = props.match.params.latlng;
-  
-   let latlng="";
-   if(strlatlng){
-    latlng=strlatlng.split(",");
-   }
- 
+
+  let latlng = "";
+  if (strlatlng) {
+    latlng = strlatlng.split(",");
+  }
+
   function mapgoogle() {
     return (
       <GoogleMap
@@ -311,8 +311,7 @@ export default function ViewCountry(props) {
                     <h4>
                       {regionalBlocks.length <= 1
                         ? "Regional Bloc"
-                        : "Regional Blocs"
-                        }
+                        : "Regional Blocs"}
                     </h4>
                   </div>
                   <div class="col-sm-12 ">
@@ -341,7 +340,6 @@ export default function ViewCountry(props) {
           </div>
         </div>
 
-        
         <div class="container-fluid country-info-card">
           <div className="row">
             <div class="col-sm-12 ">
@@ -358,7 +356,7 @@ export default function ViewCountry(props) {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

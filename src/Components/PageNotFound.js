@@ -1,6 +1,6 @@
 import React from "react";
 import PageNotFoundImage from "../assets/images/error-1349562_1280.png";
-//import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
